@@ -1,0 +1,46 @@
+@media (max-width:1460px) {
+  .titlepage h2::before,
+  .titlepage h2::after {
+       content: "";
+       position: absolute;
+       height: 5px;
+       border-top: 1px solid #13aba6;
+       top: 27px;
+       width: 150px;
+  }
+
+  .titlepage h2::before{
+    right: 0px;
+  }
+  .titlepage h2::after {
+    left: 0px;
+  }
+
+}
+
+@media(max-width:1200px) AND (min-width:996px) {
+  .titlepage h2::before,
+  .titlepage h2::after {
+       content: "";
+       position: absolute;
+       height: 5px;
+       border-top: 1px solid #13aba6;
+       top: 27px;
+       width: 80px;
+  }
+
+  .titlepage h2::before{
+    right: -10px;
+  }
+  .titlepage h2::after {
+    left: -10px;
+  }
+}
+
+@media (max-width: 995px) {
+  .titlepage h2::before,
+  .titlepage h2::after {
+    width: 20px;
+  }
+
+}
