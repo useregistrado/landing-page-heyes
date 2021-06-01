@@ -17,7 +17,7 @@
   }
 }
 
-@media(max-width:1200px) AND (min-width:996px) {
+@media(max-width:1200px) {
   .titlepage h2::before,
   .titlepage h2::after {
        content: "";
@@ -34,40 +34,157 @@
   .titlepage h2::after {
     left: -10px;
   }
-}
 
-@media (max-width: 995px) {
   .form{
-    position: static;
-    margin: auto;
-    width: 75%;
-    display: block;
-    margin-top: 30px;
+    width: 32%;
+  }
+
+  .div-enviar a{
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .form img{
+    width: 7.81em;
+    left: 32.5%;
+    top: -88px;
+  }
+
+  .form input{
+    font-size: 1.2em;
+    margin: 6px 0;
   }
 
   .form_nombre, .form_ciudad, .form_email, .form_telefono, .form_programa{
     width: 100%;
   }
 
+  .container_{
+    padding: 0px !important;
+  }
+
+  .txt_bn{
+    position: absolute;
+    top: 6.3em;
+    left: 32vw;
+    font-size: 26px;
+  }
+
+}
+
+@media (max-width: 993px) {
+
+  .slide_main img{
+    width: 100%;
+    content:url("../images/main_slide_2.png");
+
+  }
+
+  .form{
+    position: static;
+    margin: auto;
+    width: 716px;
+    display: block;
+    margin-top: 35px;
+    font-size: 16px;
+  }
+
+  .form img{
+    display: none;
+  }
+
+  .titulo h1{
+    font-size: 2em;
+  }
+
+  .titlepage h2{
+    font-size: 1.7em;
+  }
+
+  .titlepage span{
+    font-size: 24px;
+  }
+
+  .traveling-box p{
+    font-size: 24px;
+  }
+
+  .traveling-box h3 {
+       font-size: 27px;
+  }
+
+  .form input{
+    margin: 10px 0;
+    border: 0;
+    font-size: 1.5em;
+    size: 100;
+  }
+
+  .div-enviar a{
+    height: 50px;
+    max-width: 300px;
+    font-size: 1em;
+  }
+
+  .check_terminos{
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+  }
+
+  .col-md-12 label{
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }
+
+  .footer .Newsletter {
+       width: 100%;
+  }
+
+  #contact{
+    padding: 0 25px;
+  }
+
   .titlepage h2::before,
   .titlepage h2::after {
     display: none;
   }
+
+  .txt_bn{
+    position: absolute;
+    top: 5.5em;
+    left: 41vw;
+    font-size: 26px;
+  }
+
+  .txt_bn_img_1{
+    width: 45.28vw;
+    height: 16vw;
+  }
+
+  .txt_bn_img_2{
+    display: block;
+    margin: auto;
+    width: 25.884vw;
+    height: 18vw;
+  }
+
 }
 
-@media (max-width: 995px) AND (min-width: 721px) {
+@media (max-width: 768px) {
 
   .form{
     width: 90%;
     margin-top: 35px;
+    font-size: 16px;
   }
 
   .titulo h1{
-    font-size: 48px;
+    font-size: 1.5em;
   }
 
   .titlepage h2{
-    font-size: 45px;
+    font-size: 1.6em;
   }
 
   .titlepage span{
@@ -75,29 +192,28 @@
   }
 
   .traveling-box p{
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .form input{
-    margin: 18px 0;
+    margin: 10px 0;
     border: 0;
-    font-size: 45px;
+    font-size: 1.2em;
     size: 100;
   }
 
   .div-enviar a{
-    height: 90px;
-    font-size: 38px;
+    height: 50px;
+    font-size: 1.1em;
   }
 
   .check_terminos{
-    height: 40px;
-    width: 40px;
-    padding-top: 5px;
+    height: 18px;
+    width: 18px;
   }
 
   .col-md-12 label{
-    font-size: 38px;
+    font-size: 1.3em;
     margin-bottom: 8px;
   }
 
@@ -110,53 +226,6 @@
   }
 }
 
-@media (max-width: 720px) {
-
-  .form{
-    position: static;
-    margin: auto;
-    width: 95%;
-    display: block;
-    margin-top: 95px;
-    background-color: orange;
-  }
-
-  .titlepage h2{
-    font-size: 36px;
-  }
-
-  .titlepage span{
-    font-size: 29px;
-  }
-
-  .traveling-box p{
-    font-size: 22px;
-  }
-
-  .form input{
-    margin: 12px 0;
-    border: 0;
-    font-size: 29px;
-    size: 100;
-  }
-
-  .div-enviar a{
-    height: 65px;
-    font-size: 24px;
-  }
-
-  .check_terminos{
-    height: 35px;
-    width: 35px;
-    padding-top: 5px;
-  }
-
-  .col-md-12 label{
-    font-size: 26px;
-    margin-bottom: 8px;
-  }
-
-  .footer .Newsletter {
-       width: 100%;
-  }
+@media (max-width: 576px) {
+  
 }

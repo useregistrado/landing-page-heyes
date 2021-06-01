@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body{
+  font-size: 16px;
+}
+
 @font-face {
   font-family: "Sweet Talk";
   src: url("./../fonts/Sweet-Talk.otf");
@@ -97,6 +101,37 @@ p {
 }
 /* END NAV */
 
+/* START TEXTO BANNERS */
+
+.txt_bn{
+  position: absolute;
+  top: 7.307em;
+  /* left: 20.769em; */
+  left: 33vw;
+  font-size: 26px;
+}
+
+.txt_bn_img_1{
+  /* width: 19.31em;
+     height: 6.81em;*/
+  width: 33vw;
+  height: 12vw;
+}
+
+.txt_bn_img_2{
+  /* width: 12.5em;
+  height: 8.692em; */
+  display: block;
+  margin: auto;
+  width: 21.25vw;
+  height: 14.773vw;
+}
+
+/*END TEXTO BANNERS*/
+
+
+
+
 /* SLIDE_MAIN */
 
 .slide_main img{
@@ -108,14 +143,20 @@ p {
   margin-top: 25px;
 }
 
+.slide_main_2{
+  position: absolute;
+  z-index: 100;
+  background-color: red;
+}
+
 /* FORM*/
 
 
 .form{
   display: inline-block;
   position: absolute;
-  top: 90px;
-  right: 70px;
+  top: 155px;
+  right: 1.75em;
 }
 
 form {
@@ -125,17 +166,26 @@ form {
   border: 2px solid rgba(158, 158, 158, 0.35);
 }
 
+.form img{
+  width: 45%;
+  margin: auto;
+  left: 27.5%;
+  position: absolute;
+  top: -110px;
+  z-index: 100;
+}
+
+
 .form input{
   margin: 8px 0;
   border-bottom: 1px solid rgba(67, 94, 205, 0.38) !important;
-  background: transparent !important;
+  background: transparent;
   border: 0;
-  font-size: 22px;
-  size: 100;
+  font-size: 1.375em;
 }
 
 .form_nombre, .form_ciudad, .form_email, .form_telefono, .form_programa{
-  width: 350px;
+  width: 18rem;
 }
 
 input:focus {
@@ -149,11 +199,11 @@ input:focus {
 }
 
 .titulo h1{
-  font-size: 30px;
+  font-size: 1.5em;
   font-family: Montserrat;
   color: var(--azul_oscuro);
   text-align: center;
-  margin-top: 8px;
+  margin-top: 25px;
 }
 
 .titulo h1::after, .titulo h1::before{
@@ -170,21 +220,21 @@ input:focus {
 }
 
 .titulo h1::after{
-  right: 10px;
+  right: 30px;
 }
 
 .titulo h1::before{
-  left: 10px;
+  left: 30px;
 }
 
 .check_terminos{
-  height: 17px;
-  width: 18px;
+  height: 1rem;
+  width: 1rem;
   padding-top: 5px;
 }
 
 .col-md-12 label{
-  font-size: 21px;
+  font-size: 1em;
   margin-bottom: 8px;
 }
 
