@@ -5,17 +5,16 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
     <title>inglés para jovenes</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <script type="text/javascript" src="./js/scripts.js"></script>
   </head>
   <body>
     <nav>
       <div class="nav_bar">
-        <div class="nav_logo">
-          <img src="" alt="">
-        </div>
         <div class="nav_options">
-
+          ¡Aprovecha y aprende inglés con esta <span class="yellow">OFERTA ESPECIAL</span>!<br>
+          <span class="linea">¡No lo dejes pasar, <span class="sub_linea">no te arrepentirás</span>!</span>
         </div>
       </div>
     </nav>
@@ -30,40 +29,37 @@
     </div>
     <div class="form">
       <img src="./images/50p.svg" alt="">
-      <form class="" action="index.html" method="post">
+      <form id="form_id" class="" action="index.html" method="post">
         <div class="col-md-12 titulo">
           <h1>INGLÉS ONLINE</h1>
         </div>
         <div class="container container_">
           <div class="col-md-12">
-            <input class="form_nombre" type="text" placeholder="Nombre" name="" value="">
+            <input id="nombre_id" class="form_nombre" type="text" placeholder="Nombre" name="" value="">
           </div>
           <div class="col-md-12">
-            <input class="form_ciudad" type="text" placeholder="Ciudad" name="" value="">
+            <input id="ciudad_id" class="form_ciudad" type="text" placeholder="Ciudad" name="" value="">
           </div>
 
           <div class="col-md-12">
-            <input class="form_email" type="text" placeholder="Email" name="" value="">
+            <input id="email_id" class="form_email" type="text" placeholder="Email" name="" value="">
           </div>
           <div class="col-md-12">
-            <input class="form_telefono" type="text" placeholder="Teléfono" name="" value="">
+            <input id="telefono_id" class="form_telefono" type="text" placeholder="Teléfono" name="" value="">
           </div>
           <div class="col-md-12">
-            <input class="form_programa" type="text" placeholder="Programa de interés" name="" value="">
-          </div>
-          <div class="col-md-12">
-            <input class="check_terminos" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <input id="terminos_id" class="check_terminos" type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
             <label for="vehicle1"> Acepto los <a href="#">términos y condiciones</a>.</label><br>
           </div>
           <div class="col-md-12 div-enviar">
-            <a class="btn-enviar btn" href="#">ENVIAR FORMULARIO</a>
+            <a id="submit_id" onclick="validarForm()" class="btn-enviar btn" type="submit">ENVIAR FORMULARIO</a>
+            <!-- <button type="submit" class="btn btn-enviar" name="button"> eviAR</button> -->
+
           </div>
+
         </div>
 
       </form>
-
-
-
     </div>
 
     <div id="tours_1" class="Tours">
@@ -72,8 +68,8 @@
               <div class="col-md-12 ">
                  <div class="titlepage">
                     <h2>Beneficios que tienes con nosotros</h2>
-                    <span>Nuestro método es novedoso, fácil, práctico, rápido y significativo.
-                    Con la aprobación oficial de la secretaria de educación.</span>
+                    <span>Nuestra metodología es fácil, practica, rápida y eficaz, basada en los estándares de
+                      calidad MCER con el respaldo académico de Cambridge y University Press.</span>
                  </div>
               </div>
            </div>
@@ -111,7 +107,7 @@
               </div>
                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                   <div class="traveling-box">
-                    <img class="img-responsive" src="images/profesor.png" alt="#" />
+                    <img class="img-responsive" src="images/profesor.svg" alt="#" />
                     <h3>Profesores especializados</h3>
                     <p>Profundo dominio de los temas, impidiendo los vacios de conocimiento.</p>
                   </div>
@@ -131,7 +127,7 @@
             <div class="row">
                <div class="col-md-12 ">
                   <div class="titlepage">
-                     <h2>4 razones para aprender inglés.</h2>
+                     <h2>Razones para aprender inglés.</h2>
                      <span>"Un idioma te pone en un pasillo durante toda la vida. Dos idiomas te abren todas las puertas a lo largo del camino". <span class="frank_smith">Frank Smith.</span></span>
                   </div>
                </div>
@@ -167,6 +163,35 @@
                </div>
             </div>
          </div>
+      </div>
+      <div id="travel" class="Tours">
+        <div class="container">
+          <div class="row">
+             <div class="col-md-12 ">
+                <div class="titlepage testimonio">
+                   <h2>Lo que nuestros estudiantes dicen.</h2>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="container carrusel">
+        <div class="slider">
+          <div class="slides">
+            <div id="slide-1">
+              <img src="./images/testimonio1.jpg" alt="">
+            </div>
+            <div id="slide-2">
+              <img src="./images/testimonio1_2.jpg" alt="">
+            </div>
+            <div id="slide-3">
+              <img src="./images/testimonio1_3.jpg" alt="">
+            </div>
+            <div id="slide-4">
+              <img src="./images/testimonio1_4.jpg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
       <footer>
          <div id="contact" class="footer">
@@ -213,7 +238,9 @@
             </div>
          </div>
       </footer>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">

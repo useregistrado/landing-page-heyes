@@ -91,13 +91,34 @@ p {
 .nav_bar {
   width: 100vw;
   position: fixed;
-  z-index: 100;
+  z-index: 200;
   top: 0;
   background: var(--azul_oscuro);
-  height: 60px;
-  webkit-box-shadow: 0px 10px 18px -10px rgba(0,0,100,0.48);
-  -moz-box-shadow: 0px 10px 18px -10px rgba(0,0,100,0.48);
-  box-shadow: 0px 10px 18px -10px rgba(0,0,100,0.48);
+  height: 80px;
+  webkit-box-shadow: 0px 15px 18px -10px rgba(0,0,20,0.7);
+  -moz-box-shadow: 0px 15px 18px -10px rgba(0,0,20,0.7);
+  box-shadow: 0px 15px 18px -10px rgba(0,0,20,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_options{
+  text-align: center;
+  color: var(--blanco);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 22px;
+}
+
+.yellow{
+  color: var(--amarillo);
+  font-family: Montserrat;
+}
+
+.sub_linea{
+  font-style: italic;
+  color: var(--amarillo);
+  text-decoration: underline var(--amarillo);
 }
 /* END NAV */
 
@@ -146,7 +167,6 @@ p {
 .slide_main_2{
   position: absolute;
   z-index: 100;
-  background-color: red;
 }
 
 /* FORM*/
@@ -155,9 +175,10 @@ p {
 .form{
   display: inline-block;
   position: absolute;
-  top: 155px;
+  top: 170px;
   right: 1.75em;
 }
+
 
 form {
   background-color: rgba(240, 240, 240, 0.75);
@@ -364,6 +385,15 @@ input:focus {
      max-width: 100%;
 }
 /* END TOURS */
+
+
+/* TESTIMONIO */
+
+.testimonio{
+  padding-bottom: 0px !important;
+}
+
+/* END TESTIMONIO */
 
 /* FOOTER */
 .footer {
