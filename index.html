@@ -215,18 +215,20 @@
                   <div class="col-xl-8 col-lg-9 col-md-8 col-sm-12">
                      <div class="Follow">
                         <h3> PIDE UNA ASESORIA GRATIS</h3>
-                        <div class="row">
-                           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                              <input class="Newsletter" placeholder="Nombres y apellidos*" type="text">
-                           </div>
-                           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                              <input class="Newsletter" placeholder="tucorreo@mail.com*" type="text">
-                           </div>
-                           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                              <textarea class="textarea" placeholder="Quiero obtener un mejor puesto de trabajo, viajar, ver series...*" type="text"></textarea>
-                           </div>
-                        </div>
-                        <button class="Subscribe">Enviar</button>
+                        <form id="form_id_" class="" action="index.html" method="post">
+                          <div class="row">
+                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <input id="nombre_id_" class="Newsletter" placeholder="Nombres y apellidos*" type="text">
+                             </div>
+                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <input id="email_id_" class="Newsletter" placeholder="tucorreo@mail.com*" type="text">
+                             </div>
+                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <textarea id="razones_id_" class="textarea" placeholder="Quiero obtener un mejor puesto de trabajo, viajar, ver series...*" type="text"></textarea>
+                             </div>
+                          </div>
+                          <button onclick="validarForm2()" class="Subscribe">Enviar</button>
+                        </form>
                      </div>
                   </div>
                </div>

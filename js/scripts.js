@@ -21,3 +21,19 @@ function validarForm() {
     document.getElementById('form_id').submit()
   }
 }
+
+function validarForm2() {
+  var nombre = document.getElementById('nombre_id_').value
+  var razones = document.getElementById('razones_id_').value
+  var email = document.getElementById('email_id_').value
+
+  if(nombre === ''){
+    alert("Por favor rellene el campo nombres")
+  }else if (email === '') {
+    alert("Por favor rellene el campo email")
+  }else if (razones === '') {
+    alert("Por favor rellene el todos los campos")
+  }else {
+    document.getElementById('form_id_').submit()
+  }
+}
