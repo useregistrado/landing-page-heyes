@@ -78,6 +78,11 @@ h6 a {
   --blanco: #fff;
 }
 
+#id_p_mensaje{
+  font: 0.85em Montserrat, sans-serif;
+  color: #040f61;
+}
+
 p {
      margin: 0px;
      font-weight: 300;
@@ -246,11 +251,11 @@ input:focus {
 }
 
 .titulo h1::after{
-  right: 30px;
+  right: -2px;
 }
 
 .titulo h1::before{
-  left: 30px;
+  left: -2px;
 }
 
 .check_terminos{

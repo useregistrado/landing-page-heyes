@@ -20,7 +20,7 @@
     </nav>
     <section>
       <div class="slide_main">
-        <img src="./images/main_slide.png" alt="">
+        <img src="./images/main_slide.jpg" alt="">
       </div>
     </section>
     <div class="txt_bn">
@@ -29,9 +29,9 @@
     </div>
     <div class="form">
       <img src="./images/50p.svg" alt="">
-      <form id="form_id" class="" action="index.html" method="post">
+      <form id="form_id" class="" onsubmit="fun(); return false">
         <div class="col-md-12 titulo">
-          <h1>INGLÉS ONLINE</h1>
+          <h1>¿Deseas información?</h1>
         </div>
         <div class="container container_">
           <div class="col-md-12">
@@ -45,20 +45,19 @@
             <input id="email_id" class="form_email" type="text" placeholder="Email" name="" value="">
           </div>
           <div class="col-md-12">
-            <input id="telefono_id" class="form_telefono" type="text" placeholder="Teléfono" name="" value="">
+            <input id="telefono_id" class="form_telefono" type="text" placeholder="Celular" name="" value="">
           </div>
           <div class="col-md-12">
             <input id="terminos_id" class="check_terminos" type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
             <label for="vehicle1"> Acepto los <a href="#">términos y condiciones</a>.</label><br>
           </div>
           <div class="col-md-12 div-enviar">
-            <a id="submit_id" onclick="validarForm()" class="btn-enviar btn" type="submit">ENVIAR FORMULARIO</a>
-            <!-- <button type="submit" class="btn btn-enviar" name="button"> eviAR</button> -->
-
+            <a id="submit_id" class="btn-enviar btn" onclick="send_mail(0)">ENVIAR FORMULARIO</a>
+            <!-- <button type="submit" class="btn btn-primary" name="button"> ENVIAR FORMULARIO</button> -->
+            <p id="id_p_mensaje"></p>
           </div>
 
         </div>
-
       </form>
     </div>
 
@@ -181,15 +180,6 @@
             <div id="slide-1">
               <img src="./images/testimonio1.jpg" alt="">
             </div>
-            <div id="slide-2">
-              <img src="./images/testimonio1_2.jpg" alt="">
-            </div>
-            <div id="slide-3">
-              <img src="./images/testimonio1_3.jpg" alt="">
-            </div>
-            <div id="slide-4">
-              <img src="./images/testimonio1_4.jpg" alt="">
-            </div>
           </div>
         </div>
       </div>
@@ -227,7 +217,7 @@
                                 <textarea id="razones_id_" class="textarea" placeholder="Quiero obtener un mejor puesto de trabajo, viajar, ver series...*" type="text"></textarea>
                              </div>
                           </div>
-                          <button onclick="validarForm2()" class="Subscribe">Enviar</button>
+                          <button onclick="send_mail(1)" class="Subscribe">Enviar</button>
                         </form>
                      </div>
                   </div>

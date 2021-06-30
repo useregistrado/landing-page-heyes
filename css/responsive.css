@@ -77,7 +77,12 @@
   .slide_main img{
     margin-top: 40px;
     width: 100%;
-    content:url("../images/main_slide_2.png");
+    content:url("../images/main_slide_2_recortada.jpg");
+  }
+
+  .slide_main_a img{
+    margin-top: 70px;
+    content:url("../images/main_slide_a_2.png");
   }
 
   .nav_options{
@@ -185,6 +190,17 @@
     width: 90%;
     margin-top: 35px;
     font-size: 16px;
+  }
+
+  .txt_bn{
+    position: absolute;
+    top: 5em;
+    left: 43vw;
+    font-size: 26px;
+  }
+
+  .slide_main img{
+    margin-top: 50px;
   }
 
   .nav_options{
@@ -296,6 +312,14 @@
     border-radius: 2px;
     top: 7px;
 
+  }
+
+  .titulo h1::after{
+    right: 0;
+  }
+
+  .titulo h1::before{
+    left: 0;
   }
 
   .titlepage h2{

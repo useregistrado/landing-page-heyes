@@ -18,7 +18,7 @@ function validarForm() {
   }else if (!check.checked==1) {
     alert("Por favor acepte los términos")
   }else {
-    document.getElementById('form_id').submit()
+    return {"nombre":nombre,"telefono":telefono,"razones":"","email":email,"form":"0"}
   }
 }
 
@@ -34,6 +34,33 @@ function validarForm2() {
   }else if (razones === '') {
     alert("Por favor rellene el todos los campos")
   }else {
-    document.getElementById('form_id_').submit()
+    return {"nombre":nombre,"telefono":"","razones":" Mensaje: "+razones,"email":email,"form":"1"}
   }
+}
+
+function send_mail(form_number) {
+  var respuesta = (form_number==0)?validarForm():validarForm2()
+  if (!(respuesta == undefined)) {
+    peticion(respuesta)
+  }
+}
+
+function peticion(array) {
+  const url = './send_mail.php'
+  const http = new XMLHttpRequest()
+
+  http.open("POST", url)
+  http.onreadystatechange = function(){
+
+      if(this.readyState == 4 && this.status == 200){
+          var resultado = JSON.parse(http.responseText)
+          actuador(resultado)
+      }
+  }
+  http.send(JSON.stringify(array))
+}
+
+function actuador(code) {
+  var text = (code==200)?"¡Pronto estaremos en contacto contigo!":"¡Por favor vuelve a intentarlo!"
+  document.getElementById("id_p_mensaje").innerHTML = text
 }
